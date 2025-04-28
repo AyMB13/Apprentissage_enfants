@@ -1,5 +1,5 @@
 <?php
-require_once '../../includes/auth.php'; // Vérifie que l'admin est connecté
+require_once '../../includes/auth.php'; 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nom = cleanInput($_POST['nom']);
