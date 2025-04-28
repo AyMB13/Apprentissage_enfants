@@ -1,5 +1,5 @@
 <?php
-// Nettoyer les inputs
+
 function cleanInput($data) {
     $data = trim($data);
     $data = stripslashes($data);
