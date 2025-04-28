@@ -2,11 +2,11 @@
 <?php
 // Configuration base de données
 $host = 'localhost';
-$dbname = 'apprentissage_enfants'; // Ton nom de base de données
-$username = 'root'; // XAMPP = root par défaut
-$password = ''; // XAMPP = mot de passe vide par défaut
+$dbname = 'apprentissage_enfants';
+$username = 'root'; 
+$password = ''; 
 
-// Créer une connexion
+
 
 try {
     $db = new PDO('mysql:host=localhost;dbname=apprentissage_enfants;charset=utf8', 'root', '');
@@ -15,5 +15,5 @@ try {
     die('Erreur : ' . $e->getMessage());
 }
 
-define('SITE_NAME', 'Apprentissage Enfants'); // Laissez le nom sans balises HTML
+define('SITE_NAME', 'Apprentissage Enfants'); 
 ?>
