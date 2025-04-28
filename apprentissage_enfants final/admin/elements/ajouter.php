@@ -1,17 +1,17 @@
 <?php
-// Activez l'affichage des erreurs en premier
+
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// Inclure les fichiers nécessaires
+
 require_once __DIR__ . '/../../includes/config.php';
 require_once __DIR__ . '/../../includes/functions.php';
 require_once __DIR__ . '/../../includes/auth.php';
 
-// Vérifier si le formulaire est soumis
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
-        // Valider les entrées
+        
         $categorie_id = intval($_POST['categorie_id']);
         $nom = cleanInput($_POST['nom']);
         $description = cleanInput($_POST['description']);
