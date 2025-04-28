@@ -14,6 +14,6 @@ function searchItems() {
 }
 
 function loadCategory(categoryId) {
-    // Exemple : rediriger vers une page de détails pour la catégorie
+    
     window.location.href = 'category.php?id=' + categoryId;
 }
