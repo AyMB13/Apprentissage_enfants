@@ -28,21 +28,21 @@ if($category) {
         <?php endwhile;
         exit;
     }
-    // ... reste de votre code existant ...
+    
 }
 
 require_once 'includes/config.php';
 
 
 
-// Sécurité : vérifier que id est donné
+
 if (!isset($_GET['id']) || empty($_GET['id'])) {
     die('Catégorie non trouvée.');
 }
 
 $id = (int) $_GET['id'];
 
-// Charger la catégorie
+
 $stmt = $db->prepare("SELECT * FROM categories WHERE id = ?");
 $stmt->execute([$id]);
 $categorie = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -51,7 +51,6 @@ if (!$categorie) {
     die('Catégorie introuvable.');
 }
 
-// Charger les éléments de cette catégorie
 $stmt = $db->prepare("SELECT * FROM elements WHERE categorie_id = ?");
 $stmt->execute([$id]);
 $elements = $stmt->fetchAll(PDO::FETCH_ASSOC);
