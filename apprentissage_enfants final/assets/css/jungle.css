@@ -1,6 +1,6 @@
 
 
-/* Style de base */
+
 body {
     font-family: 'Comic Sans MS', cursive;
     background-color: #f0f9ff;
@@ -94,7 +94,7 @@ header {
     border-radius: 10px;
 }
 
-/* Animation pour le titre */
+
 #welcome-screen h1 {
     animation: bounce 2s infinite alternate;
 }
@@ -108,7 +108,7 @@ header {
     }
 }
 
-/* Animation pour le bouton */
+
 #welcome-screen button {
     animation: pulse 1.5s infinite, shake 3s infinite;
 }
@@ -140,8 +140,7 @@ header {
     }
 }
 
-/*j
-/* Titre flottant avec changement de couleur */
+
 #welcome-screen h1 {
     animation: 
         float 3s ease-in-out infinite,
